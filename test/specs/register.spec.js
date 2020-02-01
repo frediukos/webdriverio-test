@@ -123,7 +123,7 @@ describe('Login page', () => {
     it('should have a correct part of link', () => { //Confirmation register page
         const link = $(pageConfirmation.partOfLink);
         link.getText();
-        browser.pause(2000);
+        browser.pause(5000);
     });
 });
 

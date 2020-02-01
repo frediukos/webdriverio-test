@@ -8,7 +8,7 @@ const user = {
     firstName: 'Elena',
     lastName: 'Frediuk',
     phone: '17775551122',
-    email,
+    email: email,
     password: '0122333',
     about: 'fkdlfklmlk kdjlx lklkjiofd hcyup k.',
     goals: 'fklfijn yre oiopmcp',
