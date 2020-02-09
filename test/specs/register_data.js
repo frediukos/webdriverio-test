@@ -36,14 +36,34 @@ const pageRegisterSelectors = {
     englishLevelInput: 'form select[name="englishLevel"]'
 };
 
+const pageLoginSelectors = {
+    emailInput: 'form input[name="email"]',
+    passwordInput: 'form input[name="password"]',
+    submitButton: 'form button[type="submit"]'
+};
+
+const pageFlashGroupCreate = {
+    clickTopMenuCards: '//div[@id="site-menu"]//a[@qa="cards-link"]',
+    createNewFlashGroup: '//button[@qa="flash-create-new-group"]',
+    modalFormOpen: '//div[contains(@class, "sidepanel")]',
+    modalFormTitleIsCorrect: '//div[contains(@class, "sidepanel")]//*[@class="modal-title"]',
+    inputGroupName: '//div[contains(@class, "sidepanel")]//input[@name="name"]',
+    inputGroupDescription: '//div[contains(@class, "sidepanel")]//input[@name="description"]',
+    submitFormButton: '//div[contains(@class, "sidepanel")]//button[@type="submit"]',
+    firstItemTitle: '//div[@qa="flash-group-list "]//h4/a',
+    firstItemDescription: '//div[@qa="flash-group-list "]//div[@qa="description"]',
+    titleGroupIsClickable: '//div[@qa="flash-group-list "]//h4/a',
+    h1: '//h1'
+};
+
 const pageLogin = {
     title: 'Progress Monitor',
-    h1: 'User Login',
+    h1: 'User Login'
 };
 
 const pageConfirmation = {
   partOfLink: '*=Elena Frediuk'
 };
 
-module.exports = { URL_REGISTER, URL_LOGIN, user, pageRegister, pageRegisterSelectors, pageLogin, pageConfirmation};
-
+module.exports = { URL_REGISTER, URL_LOGIN, user, pageRegister, pageRegisterSelectors, pageConfirmation,
+    pageLogin, pageLoginSelectors, pageFlashGroupCreate };
