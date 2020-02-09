@@ -12,7 +12,7 @@ describe('Register page', () => {
 
     it('should have a correct title', () => {
         const actualH1Text = $(pageRegisterSelectors.h1).getText();
-        const expectedH1Text = 'User Register';
+        const expectedH1Text = pageRegister.h1;
         expect(actualH1Text).equal(expectedH1Text);
         browser.pause(1000);
     });
@@ -103,19 +103,19 @@ describe('Login page', () => {
     });
 
     it('should fill up Email field', () => {
-        const element = $('form input[name="email"]');
+        const element = $(pageRegisterSelectors.emailInput);
         element.setValue(user.email);
         browser.pause(1000);
     });
 
     it('should fill up Password', () => {
-        const element = $('form input[name="password"]');
+        const element = $(pageRegisterSelectors.passwordInput);
         element.setValue(user.password);
         browser.pause(2000);
     });
 
     it('should click Login button', () => {
-        const element = $('form button[type="submit"]');
+        const element = $(pageRegisterSelectors.submitButton);
         element.click();
         browser.pause(2000);
     });
@@ -123,7 +123,6 @@ describe('Login page', () => {
     it('should have a correct part of link', () => { //Confirmation register page
         const link = $(pageConfirmation.partOfLink);
         link.getText();
-        browser.pause(5000);
     });
 });
 
