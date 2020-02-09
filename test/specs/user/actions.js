@@ -9,6 +9,7 @@ function loginAsAdmin() {
     $(pageLoginSelectors.passwordInput).setValue("0122333");
     $(pageLoginSelectors.submitButton).click();
     browser.pause(1000);
+
 }
 
 function logout() {
